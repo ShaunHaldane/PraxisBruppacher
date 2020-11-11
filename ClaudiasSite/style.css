@@ -1,0 +1,148 @@
+/* Home Page */
+body {
+	margin: 0;
+	padding: 0;
+	background-attachment:fixed;
+	font-family: 'PT Sans', sans-serif, Verdana;
+	font-size: 15px;
+  color: #555;
+  background-color: #deffb0;
+}
+
+h2 {
+	margin-left: 70px;
+	padding-top: 30px;
+	/* font-family: 'Droid Serif', serif, Palatino Linotype; */
+	font-weight: normal;
+	font-size:32px;
+	color: #65A921;
+}
+.navbar-light{
+  background:#C5D730;
+}
+.Logo-properties{
+  position:absolute;
+  margin-left:-70px;
+  margin-top:-40px;
+  height:500px;
+}
+.Logo-writing{
+  margin-left:55px;
+}
+.navbar-light .navbar-brand{
+  color: #65A921;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: #65A921;
+  font-size: 1.2rem;
+  margin-left:5px;
+}
+.navbar-light .navbar-toggler {
+  color: #65A921;
+  border-color: #65A921;
+  margin-top:20px;
+}
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='darkgreen' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+
+}
+.nav-item{
+  margin-top: 30px;
+}
+.dropdown-item{
+  background-color: #C5D730;
+  color: #65A921;
+  font-size: 1.2rem;
+}
+.navbar-light .navbar-brand:hover{
+  color: #65A921;
+}
+.heading-col-properties{
+  padding-top: 4%;
+  color: #65A921;
+}
+.blond-woman-pic-properties {
+  border: 4px solid #65A921;
+  height:75%;
+  width:75%;
+  margin-top:-10px;
+  float: right;
+}
+.claudia-intro{
+  margin-top:7%;
+  font-size: 1.3rem;
+  font-family: 'PT Sans', sans-serif, Verdana;
+}
+.heading-properties{
+  font-weight: bold;
+  font-size: 3rem;
+}
+.side-padding{
+  padding-left:5%;
+  padding-right:5%;
+}
+/* .carousel-properties{
+  padding-top:10%;
+  padding-bottom:10%;
+  text-align:center;
+  color:#65A921;
+}
+.carousel-img-properties{
+  width:350px;
+  height:350px;
+} */
+
+/* Location */
+
+.map-properties{
+	width:60%;
+	margin-left:20%;
+	margin-top:30px;
+}
+
+@media(max-width: 790px) {
+  .map-properties {
+    width:90%;
+		margin-left:5%;
+  }
+}
+
+.location-heading{
+  margin-top:100px;
+	color:#65A921;
+	text-align:center;
+}
+.adress{
+	font-size: 1.3rem;
+	font-family: 'PT Sans', sans-serif, Verdana;
+}
+
+/* leistungen */
+.leistungen{
+	color:#65A921;
+  text-align: center;
+}
+
+.leistungenImg{
+  width:300px;
+  height:200px;
+  border:4px solid #65A921;
+}
+
+.leistungenImg:hover{
+  width:350px;
+  cursor:pointer;
+}
+
+.leistungen2{
+  color:#65A921;
+  text-align: center;
+  margin-top:30px;
+}
+
+/* Contact Page */
+.emailDetails{
+  margin-top: 100px;
+	color:#65A921;
+  text-align: center;
+}
