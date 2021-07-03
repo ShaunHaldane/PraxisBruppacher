@@ -1,0 +1,357 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif, Verdana;
+}
+
+body {
+    background-color: rgb(246, 248, 240);
+}
+
+nav {
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 14vh;
+    background:#C5D730;
+    z-index: 1;
+}
+
+.logo-text {
+    font-family: 'PT Sans', sans-serif, Verdana;
+	/* font-family: 'Droid Serif', serif, Palatino Linotype; */
+	font-size: 1.5rem;
+    color: #65A921;
+}
+
+.Logo-properties {
+    position:absolute;
+    margin-left: -100px;
+    margin-top: -55px;
+    height:400px;
+    z-index: 2;
+}
+
+@media screen and (max-width:1050px) {
+    .Logo-properties {
+        margin-left: -30px;
+    }
+    .logo-text {
+        margin-left: 70px;
+    }
+}
+
+@media screen and (max-width:483px) {
+    .Logo-properties {
+        margin-left: -50px;
+    }
+    .logo-text {
+        margin-left: 50px;
+    }
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    margin-left: 5%
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    color: #65A921;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.flag {
+    height: 20px;
+    width: 35px;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #65A921;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width:1400px) {
+    .nav-links {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:846px) {
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        background:#C5D730;
+        margin-top: 10px;
+
+    }
+    .burger {
+        display: block;
+    }
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* -------------End of Nav------------- */
+
+/* ---------------Header-------------------- */
+
+.header-container {
+    text-align: center;
+    color: #65A921;
+    /* margin-top: 130px; */
+    justify-content: space-evenly;
+}
+
+.header-text {
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.header-pic {
+    align-items: center;
+    border: 4px solid #65A921;
+    border-radius: 10px;
+    height: 400px
+}
+
+/*--------------- End of Header --------------*/
+
+/*------------- Leistungen -----------------*/
+
+#Leistungen-nav {
+    background:#C5D730;
+    margin-top: 100px;
+}
+
+.title {
+    text-align: center;
+    color: #65A921;
+    font-size: 2rem;
+}
+
+.about {
+    text-align: center;
+    color: #65A921;
+    font-size: 1.5rem;
+    padding: 1% 5%;
+}
+
+.products-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.products-container a{
+    text-decoration: none;
+}
+
+@media screen and (max-width:935px){
+    .products-container{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:935px){
+    .product-container{
+        padding-top: 5%;
+    }
+}
+
+.logopädie-img {
+    height: 225px;
+    width: 325px;
+    border: 5px solid #65A921;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+}
+
+.Psychosomatische-img {
+    height: 225px;
+    width: 325px;
+    border: 5px solid #65A921;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+}
+
+.Psycotherapy-img {
+    height: 225px;
+    width: 325px;
+    border: 5px solid #65A921;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+}
+
+.Matrix-img {
+    height: 225px;
+    width: 325px;
+    border: 5px solid #65A921;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+}
+
+.Systemische-img {
+    height: 225px;
+    width: 325px;
+    border: 5px solid #65A921;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+}
+
+.logopädie-img:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.Psychosomatische-img:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.Psycotherapy-img:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.Matrix-img:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.Systemische-img:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.product-text {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #65A921;
+}
+
+  /* -------------------------- */
+
+/* Description Animations */
+
+#logopädie-description {
+    background-color: #C5D730;
+    color: black;
+    margin-top: -100px;
+    margin-bottom: 50px;
+    display: none;
+}
+
+#leistungen-description {
+    background-color: #C5D730;
+    color: black;
+    margin-top: -100px;
+    margin-bottom: 50px;
+    display: none;
+}
+
+#Psychosomatische-description {
+    background-color: #C5D730;
+    color: black;
+    margin-top: -100px;
+    margin-bottom: 50px;
+    display: none;
+}
+
+#Psycotherapy-description {
+    background-color: #C5D730;
+    color: black;
+    margin-top: -100px;
+    margin-bottom: 50px;
+    display: none;
+}
+
+#Matrix-description {
+    background-color: #C5D730;
+    color: black;
+    margin-top: -100px;
+    margin-bottom: 50px;
+    display: none;
+}
+
+#Systemische-description {
+    background-color: #C5D730;
+    color: black;
+    margin-top: -100px;
+    margin-bottom: 50px;
+    display: none;
+}
+
+
+/*------------- End of Leistungen -----------------*/
+
+/*------------- Contact -----------------*/
+
+.map-properties{
+	width:60%;
+	margin-left:20%;
+	margin-top:30px;
+}
+
+@media(max-width: 790px) {
+  .map-properties {
+    width:90%;
+		margin-left:5%;
+  }
+}
+
+.location-heading{
+  margin-top:100px;
+	color:#65A921;
+	text-align:center;
+}
+.adress{
+	font-size: 1.3rem;
+	font-family: 'PT Sans', sans-serif, Verdana;
+}
+
+/*------------- End of Contact -----------------*/
+
